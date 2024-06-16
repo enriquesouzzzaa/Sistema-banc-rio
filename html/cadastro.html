@@ -5,36 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco Haida - Cadastro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/style-cadastro.css">
+    <link rel="stylesheet" href="../styles/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="my-4">
-            <h1>Cadastro de Cliente</h1>
-            <nav class="nav">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="dashboard.html">Dashboard</a>
-                <a class="nav-link" href="cliente.html">Dados do Cliente</a>
-            </nav>
-        </header>
-        <main>
-            <form action="resposta.html" method="post">
-                <div class="form">
-                    <label for="nome">Nome:</label>
-                    <input type="text" class="form-control" id="nome" name="nome" required>
-                </div>
-                <div class="form">
-                    <label for="cpf">CPF:</label>
-                    <input type="text" class="form-control" id="cpf" name="cpf" required>
-                </div>
-                <div class="form">
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" class="form-control" id="endereco" name="endereco" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-            </form>
-        </main>
-    </div>
+    <section class="area-cadastro">
+        <div class="container">
+            <header class="my-4">
+                <h1>Cadastro de Cliente</h1>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="dash.html">Dashboard</a>
+                    <a class="nav-link" href="dados.html">Dados do Cliente</a>
+                </nav>
+            </header>
+            <main>
+                <form action="resposta.html" method="post">
+                    <div class="form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" required>
+                    </div>
+                    <div class="form">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" class="form-control" id="endereco" name="endereco" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="clicarSubmit()">Cadastrar</button>
+                </form>
+            </main>
+        </div>
+    </section>
 
+        <script>
+            function clicarSubmit() {
+                window.alert('CADASTRO REALIZADO COM SUCESSO!')
+            }
+        </script>
 </body>
 </html>
